@@ -1,0 +1,104 @@
+
+:root {
+  --alfred-blue: #002F6C;
+  --alfred-light-blue: #1f5aa6;
+  --alfred-gold: #F2A900;
+}
+
+
+.main {
+  background-color: white;
+  display: flex;
+  border: solid red;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.main2 {
+  background-color: white;
+  display: flex;
+  border: solid blue;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-image: url("/background4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.main_button {
+  display: flex;
+  gap: 12px;
+  border: solid black;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  width: 80%;
+}
+
+
+.content {
+  display: flex;
+  width: 70%;
+  height: 80%;
+  border: solid black;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+
+.boton {
+  appearance: button;
+  background-color: var(--alfred-blue);
+  border: none;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  padding: 13px 18px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: filter 0.2s, transform 0.1s;
+  white-space: nowrap;
+  position: relative;
+  width: 50%;
+}
+
+
+.boton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: -4px;
+  background-color: var(--alfred-light-blue);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+
+.boton:hover {
+  filter: brightness(1.1);
+}
+
+
+.boton:active {
+  transform: translateY(2px);
+  background-color: var(--alfred-gold);
+  color: var(--alfred-blue);
+}
